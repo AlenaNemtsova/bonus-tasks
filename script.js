@@ -1,3 +1,5 @@
+'use strict';
+
 // Переменная lang может принимать 2 значения: 'ru' 'en'
 let lang = 'ru';
 
@@ -33,8 +35,8 @@ lang === 'ru' ? console.log(langArray[0].join(', ')) : console.log(langArray[1].
 
 let namePerson = 'Артём';
 
-let message = namePerson === 'Артём' ? 'директор' :
-    namePerson === 'Александр' ? 'преподаватель' :
+let message = (namePerson === 'Артём') ? 'директор' :
+    (namePerson === 'Александр') ? 'преподаватель' :
         'студент';
 
 console.log(message);
